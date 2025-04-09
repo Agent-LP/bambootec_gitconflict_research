@@ -1,0 +1,5 @@
+relationship da1b0a8b-8e8a-459b-a981-a1dc1b23f262
+	joinOnDateBehavior: datePartOnly
+	fromColumn: owid-covid-data.date
+	toColumn: LocalDateTable_96333209-b3d7-4e2e-a9bc-2941be86e2df.Date
+

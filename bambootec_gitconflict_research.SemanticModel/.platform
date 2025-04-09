@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "bambootec_gitconflict_research"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "189e4c78-bd98-42ba-b5c9-e575ac03d586"
+  }
+}
