@@ -1,0 +1,111 @@
+table covid_19_clean_complete
+	lineageTag: 9971db8e-6cd8-48d1-96d1-6cbad1322f11
+
+	column Province/State
+		dataType: string
+		lineageTag: ab0950e7-36fc-48a8-bbaa-4aed1bc7d027
+		summarizeBy: none
+		sourceColumn: Province/State
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country/Region
+		dataType: string
+		lineageTag: 3089898c-22a2-4e1e-93b4-7dbd2b325aa0
+		summarizeBy: none
+		sourceColumn: Country/Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Lat
+		dataType: double
+		lineageTag: 8d5e2d11-4f18-46a9-bee8-6a18a05b285e
+		summarizeBy: sum
+		sourceColumn: Lat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Long
+		dataType: double
+		lineageTag: 3741b0a8-fce3-4919-9ea4-4ca24423b025
+		summarizeBy: sum
+		sourceColumn: Long
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8e50244f-5408-4329-9f0b-5b7ca2bfa0aa
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: eb1d7cf9-f8f3-4574-8492-447913157ddb
+			defaultHierarchy: LocalDateTable_686179e1-1d1a-4d0b-9a3f-57eb6f795b61.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Confirmed
+		dataType: int64
+		formatString: 0
+		lineageTag: 7072e052-0f3f-443d-8809-35defb943be8
+		summarizeBy: sum
+		sourceColumn: Confirmed
+
+		annotation SummarizationSetBy = Automatic
+
+	column Deaths
+		dataType: int64
+		formatString: 0
+		lineageTag: 2c3333ae-f2f8-4551-9585-2a486455e80f
+		summarizeBy: sum
+		sourceColumn: Deaths
+
+		annotation SummarizationSetBy = Automatic
+
+	column Recovered
+		dataType: int64
+		formatString: 0
+		lineageTag: f1eeef22-730b-41bb-8ecb-506c95ba2fe8
+		summarizeBy: sum
+		sourceColumn: Recovered
+
+		annotation SummarizationSetBy = Automatic
+
+	column Active
+		dataType: int64
+		formatString: 0
+		lineageTag: 7719e2e8-d383-450b-9dcf-c8a3a4cd84da
+		summarizeBy: sum
+		sourceColumn: Active
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'WHO Region'
+		dataType: string
+		lineageTag: 8bcc6c9d-4106-438b-a983-ac9c398df542
+		summarizeBy: none
+		sourceColumn: WHO Region
+
+		annotation SummarizationSetBy = Automatic
+
+	partition covid_19_clean_complete = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("D:\Trabajo\bamboo\Active new deaths\covid_19_clean_complete.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Province/State", type text}, {"Country/Region", type text}, {"Lat", type number}, {"Long", type number}, {"Date", type date}, {"Confirmed", Int64.Type}, {"Deaths", Int64.Type}, {"Recovered", Int64.Type}, {"Active", Int64.Type}, {"WHO Region", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
