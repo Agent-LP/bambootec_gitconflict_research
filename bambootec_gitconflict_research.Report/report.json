@@ -25,7 +25,17 @@
       "filters": "[]",
       "height": 720.00,
       "name": "c9aa5df950a2d49925a9",
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0217aa12bc074513166d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":0,\"z\":0,\"width\":451.45948843364215,\"height\":279.9323271746596,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(owid-covid-data.hospital_beds_per_thousand)\"}],\"Category\":[{\"queryRef\":\"owid-covid-data.continent\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"owid-covid-data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"hospital_beds_per_thousand\"}},\"Function\":0},\"Name\":\"Sum(owid-covid-data.hospital_beds_per_thousand)\",\"NativeReferenceName\":\"Sum of hospital_beds_per_thousand\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"continent\"},\"Name\":\"owid-covid-data.continent\",\"NativeReferenceName\":\"Count of continent\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"hospital_beds_per_thousand\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 279.93,
+          "width": 451.46,
+          "x": 9.61,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
       "width": 1280.00
     }
   ]
