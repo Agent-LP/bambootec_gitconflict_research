@@ -36,31 +36,40 @@
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"0e8f0979d6d3f99574a4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(covid_19_clean_complete.Deaths)\"}],\"TrendLine\":[{\"queryRef\":\"covid_19_clean_complete.Date\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_19_clean_complete\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Deaths\"}},\"Function\":0},\"Name\":\"Sum(covid_19_clean_complete.Deaths)\",\"NativeReferenceName\":\"Sum of Deaths\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"covid_19_clean_complete.Date\",\"NativeReferenceName\":\"Date\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"0e8f0979d6d3f99574a4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(covid_19_clean_complete.Deaths)\"}],\"TrendLine\":[{\"queryRef\":\"covid_19_clean_complete.Date\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_19_clean_complete\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Deaths\"}},\"Function\":0},\"Name\":\"Sum(covid_19_clean_complete.Deaths)\",\"NativeReferenceName\":\"Sum of Deaths\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"covid_19_clean_complete.Date\",\"NativeReferenceName\":\"Date\"}]},\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
           "height": 280.00,
           "width": 280.00,
           "x": 10.00,
           "y": 0.00,
-          "z": 0.00
+          "z": 1000.00
         },
         {
-          "config": "{\"name\":\"1b133633dc4c10d9f7a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":289.53784820516256,\"y\":0,\"z\":2,\"width\":349.91540896832447,\"height\":279.9323271746596,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(owid-covid-data.new_cases)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"owid-covid-data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"new_cases\"}},\"Function\":0},\"Name\":\"Sum(owid-covid-data.new_cases)\",\"NativeReferenceName\":\"Sum of new_cases\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"new_cases\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"1b133633dc4c10d9f7a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":289.53784820516256,\"y\":0,\"z\":3000,\"width\":349.91540896832447,\"height\":279.9323271746596,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(owid-covid-data.new_cases)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"owid-covid-data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"new_cases\"}},\"Function\":0},\"Name\":\"Sum(owid-covid-data.new_cases)\",\"NativeReferenceName\":\"Sum of new_cases\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"new_cases\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 279.93,
           "width": 349.92,
           "x": 289.54,
           "y": 0.00,
-          "z": 2.00
+          "z": 3000.00
         },
         {
-          "config": "{\"name\":\"cc25c1a2e9f9a4dac8e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":730.0195983182298,\"y\":0,\"z\":1,\"width\":279.9323271746596,\"height\":279.9323271746596,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(owid-covid-data.new_cases)\"}],\"TrendLine\":[{\"queryRef\":\"owid-covid-data.date.Variation.Date Hierarchy.Year\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"owid-covid-data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"new_cases\"}},\"Function\":0},\"Name\":\"Sum(owid-covid-data.new_cases)\",\"NativeReferenceName\":\"Sum of new_cases\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"owid-covid-data.date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"date Year\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"62662cdf9f081e812c8e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":290,\"width\":451,\"height\":280,\"z\":3001,\"tabOrder\":3001}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 451.00,
+          "x": 10.00,
+          "y": 290.00,
+          "z": 3001.00
+        },
+        {
+          "config": "{\"name\":\"cc25c1a2e9f9a4dac8e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":730.0195983182298,\"y\":0,\"z\":2000,\"width\":279.9323271746596,\"height\":279.9323271746596,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(owid-covid-data.new_cases)\"}],\"TrendLine\":[{\"queryRef\":\"owid-covid-data.date.Variation.Date Hierarchy.Year\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"owid-covid-data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"new_cases\"}},\"Function\":0},\"Name\":\"Sum(owid-covid-data.new_cases)\",\"NativeReferenceName\":\"Sum of new_cases\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"owid-covid-data.date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"date Year\"}]},\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
           "height": 279.93,
           "width": 279.93,
           "x": 730.02,
           "y": 0.00,
-          "z": 1.00
+          "z": 2000.00
         }
       ],
       "width": 1280.00
