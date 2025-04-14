@@ -27,13 +27,13 @@
       "name": "c9aa5df950a2d49925a9",
       "visualContainers": [
         {
-          "config": "{\"name\":\"0217aa12bc074513166d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":0,\"z\":0,\"width\":451.45948843364215,\"height\":279.9323271746596,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(owid-covid-data.hospital_beds_per_thousand)\"}],\"Category\":[{\"queryRef\":\"owid-covid-data.continent\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"owid-covid-data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"hospital_beds_per_thousand\"}},\"Function\":0},\"Name\":\"Sum(owid-covid-data.hospital_beds_per_thousand)\",\"NativeReferenceName\":\"Sum of hospital_beds_per_thousand\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"continent\"},\"Name\":\"owid-covid-data.continent\",\"NativeReferenceName\":\"Count of continent\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"hospital_beds_per_thousand\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"0217aa12bc074513166d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":279.8605887021636,\"z\":1000,\"width\":450.88650402015253,\"height\":279.8605887021636,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(owid-covid-data.hospital_beds_per_thousand)\"}],\"Category\":[{\"queryRef\":\"owid-covid-data.continent\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"owid-covid-data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"hospital_beds_per_thousand\"}},\"Function\":0},\"Name\":\"Sum(owid-covid-data.hospital_beds_per_thousand)\",\"NativeReferenceName\":\"Sum of hospital_beds_per_thousand\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"continent\"},\"Name\":\"owid-covid-data.continent\",\"NativeReferenceName\":\"Count of continent\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"hospital_beds_per_thousand\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
-          "height": 279.93,
-          "width": 451.46,
-          "x": 9.61,
-          "y": 0.00,
-          "z": 0.00
+          "height": 279.86,
+          "width": 450.89,
+          "x": 0.00,
+          "y": 279.86,
+          "z": 1000.00
         },
         {
           "config": "{\"name\":\"0e8f0979d6d3f99574a4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(covid_19_clean_complete.Deaths)\"}],\"TrendLine\":[{\"queryRef\":\"covid_19_clean_complete.Date\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_19_clean_complete\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Deaths\"}},\"Function\":0},\"Name\":\"Sum(covid_19_clean_complete.Deaths)\",\"NativeReferenceName\":\"Sum of Deaths\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"covid_19_clean_complete.Date\",\"NativeReferenceName\":\"Date\"}]},\"drillFilterOtherVisuals\":true}}",
