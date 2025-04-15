@@ -1,9 +1,6 @@
 {
   "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.62\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
-  "publicCustomVisuals": [
-    "advanceCardE03760C5AB684758B56AA29F9E6C257B"
-  ],
   "resourcePackages": [
     {
       "resourcePackage": {
@@ -39,66 +36,31 @@
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"0e8f0979d6d3f99574a4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(covid_19_clean_complete.Deaths)\"}],\"TrendLine\":[{\"queryRef\":\"covid_19_clean_complete.Date\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_19_clean_complete\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Deaths\"}},\"Function\":0},\"Name\":\"Sum(covid_19_clean_complete.Deaths)\",\"NativeReferenceName\":\"Sum of Deaths\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"covid_19_clean_complete.Date\",\"NativeReferenceName\":\"Date\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"0e8f0979d6d3f99574a4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(covid_19_clean_complete.Deaths)\"}],\"TrendLine\":[{\"queryRef\":\"covid_19_clean_complete.Date\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_19_clean_complete\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Deaths\"}},\"Function\":0},\"Name\":\"Sum(covid_19_clean_complete.Deaths)\",\"NativeReferenceName\":\"Sum of Deaths\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"covid_19_clean_complete.Date\",\"NativeReferenceName\":\"Date\"}]},\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
           "height": 280.00,
           "width": 280.00,
           "x": 10.00,
           "y": 0.00,
-          "z": 1000.00
+          "z": 0.00
         },
         {
-          "config": "{\"name\":\"1b133633dc4c10d9f7a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":289.53784820516256,\"y\":0,\"z\":3000,\"width\":349.91540896832447,\"height\":279.9323271746596,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(owid-covid-data.new_cases)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"owid-covid-data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"new_cases\"}},\"Function\":0},\"Name\":\"Sum(owid-covid-data.new_cases)\",\"NativeReferenceName\":\"Sum of new_cases\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"new_cases\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"1b133633dc4c10d9f7a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":289.53784820516256,\"y\":0,\"z\":2,\"width\":349.91540896832447,\"height\":279.9323271746596,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(owid-covid-data.new_cases)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"owid-covid-data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"new_cases\"}},\"Function\":0},\"Name\":\"Sum(owid-covid-data.new_cases)\",\"NativeReferenceName\":\"Sum of new_cases\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"new_cases\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 279.93,
           "width": 349.92,
           "x": 289.54,
           "y": 0.00,
-          "z": 3000.00
+          "z": 2.00
         },
         {
-          "config": "{\"name\":\"245465d5aab501664d0c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":714.7766323024055,\"y\":360.68728522336767,\"z\":5002,\"width\":94.57044673539518,\"height\":184.7422680412371,\"tabOrder\":5002}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"covid_19_clean_complete.Country/Region\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_19_clean_complete\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Country/Region\"},\"Name\":\"covid_19_clean_complete.Country/Region\",\"NativeReferenceName\":\"Country/Region\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
-          "filters": "[]",
-          "height": 184.74,
-          "width": 94.57,
-          "x": 714.78,
-          "y": 360.69,
-          "z": 5002.00
-        },
-        {
-          "config": "{\"name\":\"67a94b817385858063ca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":618.0068728522336,\"y\":521.2371134020618,\"z\":5001,\"width\":193.53951890034364,\"height\":197.9381443298969,\"tabOrder\":5001}}],\"singleVisual\":{\"visualType\":\"advanceCardE03760C5AB684758B56AA29F9E6C257B\",\"projections\":{\"mainMeasure\":[{\"queryRef\":\"covid_19_clean_complete.Sum of Confirmed average per Province/State\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_19_clean_complete\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sum of Confirmed average per Province/State\"},\"Name\":\"covid_19_clean_complete.Sum of Confirmed average per Province/State\",\"NativeReferenceName\":\"Sum of Confirmed average per Province/State\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sum of Confirmed average per Province/State\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 197.94,
-          "width": 193.54,
-          "x": 618.01,
-          "y": 521.24,
-          "z": 5001.00
-        },
-        {
-          "config": "{\"name\":\"cc25c1a2e9f9a4dac8e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":730.0195983182298,\"y\":0,\"z\":2000,\"width\":279.9323271746596,\"height\":279.9323271746596,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(owid-covid-data.new_cases)\"}],\"TrendLine\":[{\"queryRef\":\"owid-covid-data.date.Variation.Date Hierarchy.Year\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"owid-covid-data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"new_cases\"}},\"Function\":0},\"Name\":\"Sum(owid-covid-data.new_cases)\",\"NativeReferenceName\":\"Sum of new_cases\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"owid-covid-data.date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"date Year\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"cc25c1a2e9f9a4dac8e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":730.0195983182298,\"y\":0,\"z\":1,\"width\":279.9323271746596,\"height\":279.9323271746596,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(owid-covid-data.new_cases)\"}],\"TrendLine\":[{\"queryRef\":\"owid-covid-data.date.Variation.Date Hierarchy.Year\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"owid-covid-data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"new_cases\"}},\"Function\":0},\"Name\":\"Sum(owid-covid-data.new_cases)\",\"NativeReferenceName\":\"Sum of new_cases\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"owid-covid-data.date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"date Year\"}]},\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
           "height": 279.93,
           "width": 279.93,
           "x": 730.02,
           "y": 0.00,
-          "z": 2000.00
-        },
-        {
-          "config": "{\"name\":\"d27eb792c16e7f2fb551\",\"layouts\":[{\"id\":0,\"position\":{\"x\":828.8192432034037,\"y\":359.52092999882746,\"z\":5000,\"width\":451.45948843364215,\"height\":279.9323271746596,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"filledMap\",\"projections\":{\"Category\":[{\"queryRef\":\"owid-covid-data.continent\",\"active\":true}],\"Series\":[{\"queryRef\":\"owid-covid-data.continent\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"owid-covid-data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"continent\"},\"Name\":\"owid-covid-data.continent\",\"NativeReferenceName\":\"continent\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]}}}",
-          "filters": "[]",
-          "height": 279.93,
-          "width": 451.46,
-          "x": 828.82,
-          "y": 359.52,
-          "z": 5000.00
-        },
-        {
-          "config": "{\"name\":\"fe52d35d00301515c636\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1019.9519254928894,\"y\":0,\"width\":260.04807450711064,\"height\":279.9323271746596,\"z\":4000,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"qnaVisual\",\"drillFilterOtherVisuals\":true}}",
-          "height": 279.93,
-          "width": 260.05,
-          "x": 1019.95,
-          "y": 0.00,
-          "z": 4000.00
+          "z": 1.00
         }
       ],
       "width": 1280.00
