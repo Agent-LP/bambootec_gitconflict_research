@@ -1,6 +1,23 @@
 table covid_19_clean_complete
 	lineageTag: 9971db8e-6cd8-48d1-96d1-6cbad1322f11
 
+	measure 'Sum of Confirmed average per Province/State' =
+			
+			AVERAGEX(
+				KEEPFILTERS(VALUES('covid_19_clean_complete'[Province/State])),
+				CALCULATE(SUM('covid_19_clean_complete'[Confirmed]))
+			)
+		formatString: 0
+		lineageTag: 1cf620ca-0d1a-4c69-8f4a-8027b3f0579d
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "AveragePerCategory"
+				}
+
+		changedProperty = FormatString
+
 	column Province/State
 		dataType: string
 		lineageTag: ab0950e7-36fc-48a8-bbaa-4aed1bc7d027
