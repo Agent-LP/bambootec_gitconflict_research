@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "0e8f0979d6d3f99574a4",
+  "position": {
+    "x": 10,
+    "y": 0,
+    "z": 1000,
+    "height": 280,
+    "width": 280
+  },
+  "visual": {
+    "visualType": "kpi",
+    "query": {
+      "queryState": {
+        "Indicator": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "covid_19_clean_complete"
+                        }
+                      },
+                      "Property": "Deaths"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(covid_19_clean_complete.Deaths)",
+              "nativeQueryRef": "Sum of Deaths"
+            }
+          ]
+        },
+        "TrendLine": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "covid_19_clean_complete"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "covid_19_clean_complete.Date",
+              "nativeQueryRef": "Date"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
