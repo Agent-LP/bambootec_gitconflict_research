@@ -1,0 +1,22 @@
+* [33m3b25c62[m[33m ([m[1;36mHEAD -> [m[1;32mimageFromAnotherAccount[m[33m, [m[1;31morigin/imageFromAnotherAccount[m[33m)[m imagen 6 sobre 4
+* [33m48d252a[m imagen 4 sobre imagen 1
+[31m|[m * [33md0762b7[m[33m ([m[1;31morigin/fix/imageSobreposition[m[33m)[m imagen 5 sobre 3
+[31m|[m[31m/[m  
+* [33mbbccf84[m[33m ([m[1;32mfix/imageSobreposition[m[33m)[m adding image 3
+* [33mc321625[m Añadiendo 2 imagenes
+* [33mff0ffee[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m adding cache of semantic model
+*   [33m5d747e3[m Merge branch 'main' of https://github.com/Agent-LP/bambootec_gitconflict_research
+[33m|[m[34m\[m  
+[33m|[m * [33mcd600d0[m Committing 2 items from workspace a5f20601-a5e5-4395-84f8-eae9f73bfb4b
+[33m|[m * [33m69d9f28[m Committing 1 item from workspace a5f20601-a5e5-4395-84f8-eae9f73bfb4b
+* [34m|[m [33ma38384e[m cambio para pipeline
+[34m|[m[34m/[m  
+[34m|[m * [33m390f437[m[33m ([m[1;31morigin/Development[m[33m)[m adding source
+[34m|[m * [33ma40a7df[m[33m ([m[1;31morigin/test[m[33m)[m Committing 2 items from workspace 7a8da355-65e0-4af4-ab25-059446880b7e
+[34m|[m * [33me72b572[m feat/ add new measure and filters
+[34m|[m * [33m611743b[m feat/adding map
+[34m|[m[34m/[m  
+* [33m555a932[m[33m ([m[1;31morigin/feature/add_kpis[m[33m)[m adding kpis
+* [33m66ab958[m[33m ([m[1;31morigin/feature/add_clusteredColumnChart[m[33m)[m feat/cantidad de camas en grafico de barras
+* [33mad1cc7c[m feat/nueva tabla de datos del covid
+* [33mdc70543[m feat/creating proyect and upload first table
