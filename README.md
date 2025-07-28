@@ -30,7 +30,11 @@ Al realizar un rebase, puede que las imágenes no se muestren en el reporte de P
 ## Notas
 - Si hay conflictos de git, resuélvelos manualmente asegurando que no se pierdan referencias a imágenes necesarias.
 - Repite el proceso en cada archivo `report.json` relevante si tienes más de uno en el proyecto.
-
+- Verifica siempre que los nombres de las imágenes coincidan en todos los lugares donde se referencian:
+   * En la carpeta [visuals](https://github.com/Agent-LP/bambootec_gitconflict_research/tree/fix/imageSobreposition/bambootec_gitconflict_research.Report/definition/pages/c9aa5df950a2d49925a9/visuals)
+   * En la carpeta [RegisteredResources](https://github.com/Agent-LP/bambootec_gitconflict_research/tree/fix/imageSobreposition/bambootec_gitconflict_research.Report/StaticResources/RegisteredResources)
+   * En el archivo [report.json](https://github.com/Agent-LP/bambootec_gitconflict_research/blob/fix/imageSobreposition/bambootec_gitconflict_research.Report/definition/report.json)
+- Para mayor seguimiento de las imagenes puedes cambiarle el nombre de carpeta a cada visual para saber de que visual se trata
 ---
 
 Con estos pasos, las imágenes deberían aparecer correctamente en el reporte tras un rebase.
